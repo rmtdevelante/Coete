@@ -1,0 +1,125 @@
+body{/*Se utiliza el body para el formato de toda la pagina en este caso no se usa el putno puesto que no hay 
+    un class*/
+    background-color: black;/*El atributo  background-color: indica el color de fondo y como el color dice negro
+    esto indicará que nuestro fondo de página será negro*/
+}
+.cabeza{/*Como en nuestro contenedor pusimos de nombre "cabeza" desde aquí se podrá modificar a gusto.*/
+    width: 0;/* Establece el ancho del elemento en 0 píxeles.Con esto se establece que el contenedor no se
+    modificará de su estructura original*/
+    height: 0;/*Establece la altura del elemento en 0 píxeles. Con esto se establece que el contenedor no se
+    modificará de su estructura original*/
+    border: 100px solid transparent; /* Establece un borde de 100 píxeles de ancho, completamente transparente.
+    Base y "fondo de la división"*/
+    border-top: 0;/* Elimina el borde superior del elemento.*/
+    border-bottom: 150px solid red; /*Establece un borde inferior de 150 píxeles de ancho, de color rojo.*/
+    margin-left: auto;/*Coloca automáticamente el margen izquierdo del elemento.*/
+    margin-right: auto;/*Coloca automáticamente el margen derecho del elemento.*/
+    display: block;/*Hace que el elemento se muestre como un bloque, ocupando todo el ancho disponible y 
+    comenzando en una nueva línea.*/
+}
+.cuerpo{/*Ahora modificamos el cuerpo del cohete*/
+    height: 300px;/*Establece la altura del contenedor en 300 píxeles.*/
+    width: 200px;/*Establece el ancho del contendor en 200 píxeles.*/
+    background-color: white;/*Establece el color de fondo del contenedor en blanco.*/
+    display: block;/*Hace que el contenedor se muestre como un bloque, ocupando todo el ancho disponible y
+    comenzando en una nueva línea*/
+    margin-bottom: 10px;/*Agrega un margen inferior de 10 píxeles al contenedor.*/
+    margin-left: auto;/*Coloca automáticamente el margen izquierdo del contenedor.*/
+    margin-right: auto;/*Coloca automáticamente el margen derecho del elemento.*/
+}
+.ala1 {/*Ahora debido al class podemos estilar el ala1*/
+    position: absolute;/*Este estilo posiciona el elemento de forma absoluta en relación con su primer 
+    padre o primer contenedor con posición no estática.*/
+    top: 200px;/*Esto coloca el elemento 200 píxeles desde la parte superior de su contenedor.*/
+    left: 440px; /*Ajuste para que esté pegado a la izquierda en 400 pixeles*/
+    width: 0;/* Establece el ancho del elemento en 0 píxeles. Esto se hace para que no tendrá tamaño visible 
+    en la pantalla.En otras palabras, el elemento será invisible ya que no ocupará ningún espacio en el diseño
+     de la página.*/
+    height: 0;/*Establece la altura del elemento en 0 píxeles. al igual que en el ancho el elemento será invisible
+     ya que no ocupará ningún espacio en el diseño de la página.*/
+    border-left: 50px solid transparent;/*Crea un borde izquierdo de 50 píxeles de ancho, completamente 
+    transparente.*/
+    border-right: 50px solid transparent;/*Crea un borde derecho de 50 píxeles de ancho, completamente
+    transparente.*/
+    border-bottom: 100px solid red;/*Crea un borde inferior de 100 píxeles de ancho, de color rojo.*/
+    transform: rotate(270deg);/*Rota el elemento 270 grados en sentido antihorario(al revés de las manecillas del 
+    reloj), lo que produce la forma de un triángulo apuntando hacia arriba.*/
+    }
+
+.ala2 {/*Ahora debido al class podemos estilar el ala2*/
+    position: absolute;/*Este estilo posiciona el elemento de forma absoluta en relación con su primer 
+    padre o primer contenedor con posición no estática.*/
+    top: 200px;/*Esto coloca el elemento 200 píxeles desde la parte superior de su contenedor.*/
+    right: 440px; /* Ajuste para que esté pegado a la izquierda */
+    width: 0;/* Establece el ancho del elemento en 0 píxeles. Esto se hace para que no tendrá tamaño visible 
+    en la pantalla.En otras palabras, el elemento será invisible ya que no ocupará ningún espacio en el diseño
+     de la página.*/
+    height: 0;/*Establece la altura del elemento en 0 píxeles. al igual que en el ancho el elemento será invisible
+    ya que no ocupará ningún espacio en el diseño de la página.*/
+    border-left: 50px solid transparent;/*Crea un borde izquierdo de 50 píxeles de ancho, completamente 
+    transparente.*/
+    border-right: 50px solid transparent;/*Crea un borde derecho de 50 píxeles de ancho, completamente
+    transparente.*/
+    border-bottom: 100px solid red;/*Crea un borde inferior de 100 píxeles de ancho, de color rojo.*/
+    transform: rotate(90deg);/*Rota el elemento 900 grados en sentido antihorario(al revés de las manecillas del 
+    reloj), lo que produce la forma de un triángulo apuntando hacia arriba.*/
+    
+}
+.ventana {/*Al igual que las alas podemos estilar la ventana que está dentro del contenedor*/
+    position: relative; /* Añade posición relativa para que los ajustes de posición sean relativos al cuerpo */
+    width: 100px;/*Establece el ancho del contenedor en 100 píxeles.*/
+    height: 100px;/*Establece la altura del contendor en 100 píxeles.*/
+    border-radius: 50%; /* Haz que la ventana sea un círculo */
+    background-color: aqua;/*Indica que el color de fondo del contenedor será azul aqua*/
+    margin: 0 auto; /* Establece un margen superior e inferior de 0 píxeles y un margen izquierdo y derecho
+    automáticos.Esto centra horizontalmente el elemento en su contenedor. */
+    top: 50%; /*Mueve el elemento hacia abajo en relación con su contenedor al 50% de la altura del contenedor*/
+    transform: translateY(-50%); /*plica una transformación para desplazar el elemento hacia arriba en relación
+    con su posición original. El valor negativo del 50% significa que se desplaza hacia arriba en la mitad de su
+    altura, lo que lo centra verticalmente en su contenedor.*/
+    border: 2px solid black;/*Crea un borde de 2 píxeles de ancho, sólido y de color negro */
+}
+.ventana2{/*A su vez estilamos la segunda ventana*/
+    position: relative; /* Añade posición relativa para que los ajustes de posición sean relativos al cuerpo */
+    width: 50px;/*Establece la altura del contenedor en 50 píxeles.*/
+    height: 50px;/*Establece el ancho del contendor en 50 píxeles.*/
+    border-radius: 50%; /* Hace que la ventana sea un círculo */
+    background-color: black;/*Indica que el color de fondo del contenedor será negro*/
+    margin: 0 auto;/* Establece un margen superior e inferior de 0 píxeles y un margen izquierdo y derecho
+    automáticos.Esto centra horizontalmente el elemento en su contenedor. */
+    top: 50%;/*Mueve el elemento hacia abajo en relación con su contenedor al 50% de la altura del contenedor*/
+    transform: translateY(-50%);/*plica una transformación para desplazar el elemento hacia arriba en relación
+    con su posición original. El valor negativo del 50% significa que se desplaza hacia arriba en la mitad de su
+    altura, lo que lo centra verticalmente en su contenedor.*/
+    
+}
+.propulsor {/*Por úlimo estilamos el contenedor para crear un rombo*/
+    width: 0;/* Establece el ancho del elemento en 0 píxeles. Esto se hace para que no tendrá tamaño visible 
+    en la pantalla.En otras palabras, el elemento será invisible ya que no ocupará ningún espacio en el diseño
+     de la página.*/
+    height: 0;/* Establece el ancho del elemento en 0 píxeles. Esto se hace para que no tendrá tamaño visible 
+    en la pantalla.En otras palabras, el elemento será invisible ya que no ocupará ningún espacio en el diseño
+     de la página.*/
+    border-left: 200px solid transparent;/*Crea un borde izquierdo de 200 píxeles de ancho, completamente 
+    transparente.*/
+    border-right: 200px solid transparent;/*Crea un borde derecho de 50 píxeles de ancho, completamente
+    transparente.*/
+    border-bottom: 120px solid yellow; /* Color del propulsor */
+    border-top: 30px solid transparent;/*Crea un borde en la parte superior del elemento con un grosor de 
+    30 píxeles y completamente transparente. Esto puede ser útil para agregar un espacio adicional en la parte 
+    superior del elemento o para fines decorativos.*/
+    position: absolute;/*Este estilo establece la posición del elemento como absoluta. Esto significa que el 
+    elemento se posicionará en relación con su primer padre que tenga una posición diferente de estática 
+    (posición por defecto). Si no hay ningún padre con una posición diferente de estática, el elemento se
+     posicionará en relación con el documento HTML.*/
+    bottom: 90px; /*Establece la distancia del borde inferior del elemento al borde inferior del contenedor 
+    en 90 píxeles. En otras palabras, desplaza el elemento hacia arriba desde el borde inferior del contenedor 
+    en 90 píxeles.*/
+    left: 50%; /*Coloca el borde izquierdo del elemento en el 50% del ancho del contenedor. Esto significa que
+     el elemento estará horizontalmente centrado en relación con el contenedor.*/
+    transform: translateX(-50%); /*Aplica una transformación para desplazar el elemento horizontalmente en 
+    relación con su posición original. El valor negativo del 50% significa que el elemento se desplazará hacia 
+    la izquierda en la mitad de su ancho, lo que lo centrará horizontalmente en su contenedor.*/
+    z-index: -1;/*Con esto podemos poner el contenedor detrás de otros contenedores para dar la ilusión de un 
+    rombo*/
+}
